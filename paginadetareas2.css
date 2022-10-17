@@ -1,0 +1,129 @@
+*, ::after, *,::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: black ;
+    margin: 0;
+}
+
+/* Marcador de Tarea */
+#MarcadoDeTarea{
+    color: white;
+}
+#MarcadoDeTareaDiv{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+#titulo{
+    color: blue;
+    background-color: greenyellow;
+    text-align: center;
+    margin: auto;    
+    text-decoration: underline;
+}
+p{
+    color: white;
+    text-align: center;
+}
+
+
+#Tareas{
+    padding: 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    list-style: none;
+    font-size: 1.5rem;
+    width: 100%;
+    height: 15rem;
+    overflow: auto;
+}
+
+.liTarea{
+
+
+}
+.contenedor{
+    display: flex;
+    
+}
+
+/* Botones */
+
+#cancelar-icono{
+    color: red;
+    transition: all 0.3s ease-in-out;
+    border-radius: 0px 0.5rem 0.5rem 0px;
+    cursor: grabbing ;
+    transform: scale(1);
+}
+
+#logrado-icono{
+    color: greenyellow;
+    transition: all 0.3s ease-in-out;
+    border-radius: 0.5rem 0px 0px 0.5rem;
+    transform: scale(1);
+    cursor: pointer;
+}
+
+#logrado-icono:hover {
+    background-color: rgb(100, 187, 92);
+    transform: scale(1.10);
+    border-radius: 8px;
+}
+
+#cancelar-icono:hover {
+background-color: tomato;
+transform: scale(1.10);
+border-radius: 8px;
+}
+
+#marcadoBotones{
+    background-color: greenyellow;
+    color: blue;
+    text-align: center;
+    text-decoration:underline;
+
+}
+
+/* Botonos de Leyenda */
+
+#BotonesDeLeyenda{
+    display: flex;
+    justify-content: space-around;
+}
+
+.TareasMarcadas {
+    background-color: greenyellow;
+    width: 170px;
+    height: 50px;
+    position: relative;
+    padding-right: 6px;
+    font-size: 18px;
+    line-height: 40px;
+    border-radius: 5px;
+    cursor: pointer;
+    transform: scale(1);
+
+}
+
+.TareasMarcadas:hover{
+    transform:  scale( 1.25);
+}
+
+@media (max-width:425px){
+
+    html{ max-width: 425px
+
+    };
+
+
+}
